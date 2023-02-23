@@ -7,7 +7,7 @@ A flappy bird game created using python and Panda3D framework.
 3. Blender (3D modeling software)
 
 ## Designs
-1. Falling physics
+1. Falling physics  
 Falling physics is done using a linear function where velocity is directly proportional to time.  
 Proportionality can be adjusted using 'gravity' variable.  
 ```
@@ -17,8 +17,8 @@ self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update p
 ```
 ![Falling physics](docs/images/falling-physics.jpg)
 
-2. Jumping physics
-Jumping physics is done using the following equation.
+2. Jumping physics  
+Jumping physics is done using the following equation.  
 Jump height can be adjusted using  'jumpHeight' variable.
 ```
 dt = globalClock.getDt() // Get the time value
@@ -27,8 +27,8 @@ self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update p
 ```
 ![Jumping physics](docs/images/jump-velocity.jpg)
 
-3. Generating pipes
-The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.
+3. Generating pipes  
+The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.  
 At every certain interval, the game will generate 1 extra pipe of a random height.
 ```
 if self.ufo.getPos() >= self.checkpoint: // A check point is used between every interval
@@ -39,7 +39,7 @@ if self.ufo.getPos() >= self.checkpoint: // A check point is used between every 
   self.pipes.instanceTo(placeholder)
 ```
 
-4. 3D models 
+4. 3D models  
 The 3D models in the game is created using Blender.  
 ![UFO 3D model](docs/images/ufo-model.jpg)  
 ![Pipes 3D model](docs/images/pipe-model.jpg)
