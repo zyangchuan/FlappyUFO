@@ -15,7 +15,7 @@ dt = globalClock.getDt() // Get the time value
 self.velocityZ += self.gravity * dt // Falling equation
 self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update position of the UFO
 ```
-![Falling physics](https://github.com/zyangchuan/FlappyUFO/tree/main/docs/images/falling-physics.jpg)
+![Falling physics](docs/images/falling-physics.jpg)
 
 2. Jumping physics
 Jumping physics is done using the following equation.
@@ -25,7 +25,7 @@ dt = globalClock.getDt() // Get the time value
 self.velocityZ = math.sqrt(self.jumpHeight * -self.gravity) // Jump velocity equation
 self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update position of the UFO
 ```
-![Jumping physics](https://github.com/zyangchuan/FlappyUFO/tree/main/docs/images/jump-velocity.jpg)
+![Jumping physics](docs/images/jump-velocity.jpg)
 
 3. Generating pipes
 The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.
@@ -40,9 +40,9 @@ if self.ufo.getPos() >= self.checkpoint: // A check point is used between every 
 ```
 
 4. 3D models 
-The 3D models in the game is created using Blender.
-![UFO 3D model](https://github.com/zyangchuan/FlappyUFO/tree/main/docs/images/ufo-model.jpg)
-![Pipes 3D model](https://github.com/zyangchuan/FlappyUFO/tree/main/docs/images/pipe-model.jpg)
+The 3D models in the game is created using Blender.  
+![UFO 3D model](docs/images/ufo-model.jpg)  
+![Pipes 3D model](docs/images/pipe-model.jpg)
 
 ## How to run the FlappyUFO
 Step 1: Download Flappy UFO-0.0.0_win_amd64.zip.  
