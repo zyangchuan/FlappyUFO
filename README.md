@@ -16,17 +16,17 @@ A flappy bird game created using python and Panda3D framework.
 4. 3D models 
 
 ## How to run the FlappyUFO
-Step 1: Download Flappy UFO-0.0.0_win_amd64.zip.
-Step 2: Unzip and run Flappy UFO.exe under Flappy UFO folder.
+Step 1: Download Flappy UFO-0.0.0_win_amd64.zip.  
+Step 2: Unzip and run Flappy UFO.exe under Flappy UFO folder.  
 
 ## How to play
 1. Click to jump.
 2. Close and open the program to restart the game.
 
 ## How to run FlappyUFO 
-Step 1: Make sure the latest Pyhton version is installed on your computer.
-Step 2: Install Panda3D package
-'''
+Step 1: Make sure the latest Pyhton version is installed on your computer.  
+Step 2: Install Panda3D package  
+```
 pip install panda3d
-'''
+```
 Step 3: Run FlappyUFO.py
