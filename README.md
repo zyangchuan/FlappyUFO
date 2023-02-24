@@ -57,7 +57,7 @@ Step 2: Unzip and run "Flappy UFO.exe" under "Flappy UFO" folder.
 - Close and open the program to restart the game
 
 ## How to run FlappyUFO locally
-Step 1: Install the latest version of Python 
+Step 1: Install the latest version of Python  
 Step 2: Install Panda3D package  
 ```
 pip install panda3d
