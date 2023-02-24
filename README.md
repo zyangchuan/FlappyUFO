@@ -8,8 +8,8 @@ A flappy bird game created using python and Panda3D framework.
 
 ## Designs
 1. Falling physics  
-Falling physics is done using a linear function where velocity is directly proportional to time.  
-Proportionality can be adjusted using 'gravity' variable.  
+-Falling physics is done using a linear function where velocity is directly proportional to time.  
+-Proportionality can be adjusted using 'gravity' variable.  
 ```
 dt = globalClock.getDt() // Get the time value
 self.velocityZ += self.gravity * dt // Falling equation
@@ -18,8 +18,8 @@ self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update p
 ![Falling physics](docs/images/falling-physics.jpg)
 
 2. Jumping physics  
-Jumping physics is done using the following equation.  
-Jump height can be adjusted using  'jumpHeight' variable.
+-Jumping physics is done using the following equation.  
+-Jump height can be adjusted using  'jumpHeight' variable.
 ```
 dt = globalClock.getDt() // Get the time value
 self.velocityZ = math.sqrt(self.jumpHeight * -self.gravity) // Jump velocity equation
@@ -28,8 +28,8 @@ self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update p
 ![Jumping physics](docs/images/jump-velocity.jpg)
 
 3. Generating pipes  
-The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.  
-At every certain interval, the game will generate 1 extra pipe of a random height.
+-The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.  
+-At every certain interval, the game will generate 1 extra pipe of a random height.
 ```
 if self.ufo.getPos() >= self.checkpoint: // A check point is used between every interval
   self.pipeNumber += 1 // Add a new pipe once a check point is reached
