@@ -15,7 +15,7 @@ dt = globalClock.getDt() // Get the time value
 self.velocityZ += self.gravity * dt // Falling equation
 self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update position of the UFO
 ```
-![Falling physics](docs/images/falling-physics.jpg)
+<img src="docs/images/falling-physics.jpg" alt="Falling physics equation" width=50% height=50%>
 
 2. Jumping physics  
 -Jumping physics is done using the following equation.  
@@ -25,7 +25,7 @@ dt = globalClock.getDt() // Get the time value
 self.velocityZ = math.sqrt(self.jumpHeight * -self.gravity) // Jump velocity equation
 self.ufo.setPos(self.ufo.getPos() + Vec3(0, 0, self.velocityZ * dt)) // Update position of the UFO
 ```
-![Jumping physics](docs/images/jump-velocity.jpg)
+<img src="docs/images/jump-velocity.jpg" alt="Jumping physics equation" width=50% height=50%>
 
 3. Generating pipes  
 -The game initiate with 5 pipes of random heights at the beginning and generates more pipes as the UFO(player) moves to the right.  
