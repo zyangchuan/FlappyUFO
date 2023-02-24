@@ -1,5 +1,6 @@
 # FlappyUFO
 A flappy bird game created using python and Panda3D framework.  
+  
 <img src="docs/images/screenshot.jpg" alt="Game screenshot" width=50% height=50%>
 
 ## Technologies Used
@@ -42,6 +43,7 @@ if self.ufo.getPos() >= self.checkpoint: // A check point is used between every 
 
 4. **3D models**
 - The 3D models in the game is created using Blender.   
+  
 <img src="docs/images/ufo-model.jpg" alt="UFO 3D model" width=50% height=50%>  
 <img src="docs/images/pipe-model.jpg" alt="Pipes 3D model" width=50% height=50%>
 
