@@ -1,5 +1,6 @@
 # FlappyUFO
-A flappy bird game created using python and Panda3D framework.
+A flappy bird game created using python and Panda3D framework.  
+<img src="docs/images/screenshot.jpg" alt="Game screenshot" width=50% height=50%>
 
 ## Technologies Used
 1. Python (Programming language)
